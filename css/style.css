@@ -1,0 +1,98 @@
+/* ============================
+ Web Page General Style 
+============================ */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: #1A181B;
+    font-size: 2em;
+}
+img {
+    width: 100%;
+    border-radius: 15px;
+    border-color: #ED4747;
+    border: 50px solid;
+}
+
+img:hover {
+    border-bottom: #ED4747 5px solid;
+}
+
+span {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Search Box Style */
+.searchbox {
+    width: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.searchbox input {
+    display: flex;
+    background: #1A181B;
+    border: 0;
+    border-bottom: 1px solid #ED4747;
+    margin-top: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+    width: 40%;
+    color: #ED4747;
+  }
+
+  ::placeholder {
+      color: #ED4747;
+      font-size: 0.7em;
+      letter-spacing: 0.4em;
+  }
+/* Images Thumbnails Style */
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.grid__col {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 690px) {
+
+    .grid__col {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1140px) {
+    .grid__col {
+        display: flex;
+        flex-direction: column;
+    }
+}
